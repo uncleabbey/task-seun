@@ -13,10 +13,13 @@
   padding: 0;
   z-index: -1;
   margin: 0;
+  width: 700px;
 }
-
+.trouble img {
+  width: 100%;
+}
 .nav {
-  width: 75%;
+  width: 85%;
   margin: 5.125em auto;
   display: flex;
   justify-content: space-between;
@@ -50,7 +53,7 @@
 }
 
 .nav ul > li > a {
-  margin: 0 1.5em;
+  margin: 0 1em;
   font-size: 14px;
   text-decoration: none;
   color: rgb(79, 46, 253);
@@ -119,7 +122,7 @@
 }
 .services {
   padding: 3em;
-  width: 70%;
+  width: 85%;
   margin: 3em auto;
 }
 .block {
@@ -131,16 +134,16 @@
   color: #ffffff;
 }
 .services-head {
-  margin: 17em 0 4em 0;
+  margin: 3em 0 4em 0;
 }
 .work-cont {
   display: flex;
-  width: 300px;
+  width: 200px;
   color: #ffffff;
-  margin: 10em 2em 2em 2em;
+  margin: 2em;
 }
 .work-cont > .work-details {
-  margin-left: 5px;
+  margin-left: 15px;
 }
 .works-cont {
   display: flex;
@@ -170,7 +173,7 @@
   background-size: 700px 600px;
 }
 .team-cont {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
   padding: 3em;
 }
@@ -211,14 +214,14 @@
   color: #502eff;
 }
 .team-card-img {
-  width: 310px;
+  width: 250px;
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .team-card-img > img {
-  width: 595px;
+  width: 500px;
 }
 .jam {
   background: rgb(243, 195, 184);
