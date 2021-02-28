@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 
-.home-container {
-  overflow-x: hidden;
-  padding: 0;
-  margin: 0;
-}
 .trouble {
   position: absolute;
   right: 0px;
@@ -16,7 +11,7 @@
   width: 700px;
 }
 .trouble img {
-  width: 100%;
+  min-width: 100%;
 }
 .nav {
   width: 85%;
@@ -45,6 +40,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -214,14 +210,14 @@
   color: #502eff;
 }
 .team-card-img {
-  width: 250px;
-  height: 400px;
+  width: 200px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .team-card-img > img {
-  width: 500px;
+  width: 400px;
 }
 .jam {
   background: rgb(243, 195, 184);
@@ -233,7 +229,7 @@
   background: rgb(62, 72, 99);
 }
 .team-card-img > .jam-img {
-  width: 770px;
+  width: 470px;
 }
 .team-card-details {
   text-align: center;
@@ -361,4 +357,82 @@
   font: normal normal medium 15px/25px Poppins;
   letter-spacing: 0px;
   color: #502eff;
+}
+.hamburger {
+  display: none;
+  color: #502eff;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    width: 100%;
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+  .hamburger {
+    display: block;
+  }
+  #show-menu {
+    display: block;
+  }
+  #hide-menu {
+    display: none;
+  }
+  .link-grp {
+    position: absolute;
+    top: 7em;
+    left: 0;
+    background: #502eff;
+    width: 100%;
+  }
+  .cta-cont {
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-cont > a > button {
+    background: white;
+    color: #502eff;
+    font-weight: bolder;
+  }
+  .nav ul > li > a {
+    color: white;
+  }
+  .nav ul > li > a:hover {
+    color: red;
+  }
+  .showcase {
+    width: 100%;
+  }
+  .footer {
+    padding: 1em;
+  }
+  .footer-wrapper {
+    width: 100%;
+    margin: 1em;
+  }
+  .hr {
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+  }
+  .teams-people-cont {
+    flex-direction: column;
+  }
+  .team-card-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .team-card-img > img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+  .teams-people-cont {
+    flex-direction: column;
+  }
 }

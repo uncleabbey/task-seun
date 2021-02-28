@@ -7,16 +7,16 @@ import { Work } from '../components/Work';
 import { Teams } from '../components/Teams';
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
+import '../syles/home.css';
 
 const Home = () => {
   return (
     <div className="home-container">
-      <div className="trouble">
-        <img
-          src="https://res.cloudinary.com/kayode/image/upload/v1614421837/Image_1_lo725y.svg"
-          alt=""
-        />
-      </div>
+      <img
+        src="https://res.cloudinary.com/kayode/image/upload/v1614515452/Image_1_1X_asgjuo.png"
+        alt=""
+        className="trouble"
+      />
       <Nav />
       <div className="showcase-cont">
         <div className="showcase">
