@@ -134,7 +134,7 @@
 }
 .work-cont {
   display: flex;
-  width: 200px;
+  width: 250px;
   color: #ffffff;
   margin: 2em;
 }
@@ -430,9 +430,55 @@
   .team-card-img > img {
     width: 100%;
   }
+  .social-links {
+    width: 100%;
+  }
+  .team-wrapper {
+    background: url('https://res.cloudinary.com/kayode/image/upload/v1614486619/team_p3qvur.svg')
+        no-repeat,
+      url('https://res.cloudinary.com/kayode/image/upload/v1614487340/Group_cvrtih.svg')
+        center bottom no-repeat;
+    padding: 2em;
+    background-size: 700px 600px;
+  }
 }
 @media screen and (min-width: 900px) and (max-width: 1300px) {
   .teams-people-cont {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .trouble img {
+    width: 100%;
+  }
+  .showcase > p {
+    margin: 0 auto;
+  }
+  .home-container {
+    /* background: #000; */
+    width: 100%;
+  }
+  .showcase > p {
+    margin: 0 auto;
+  }
+  .services {
+    width: 100%;
+    padding: 1em;
+  }
+  .trouble {
+    width: 100%;
+  }
+  .play-cont {
+    text-align: center;
+    margin: 2em 4em;
+  }
+  .team-card-img {
+    width: 400px;
+  }
+  .team-card-img > img {
+    width: 400px;
+  }
+  .teams-people-cont {
+    width: 100%;
   }
 }
