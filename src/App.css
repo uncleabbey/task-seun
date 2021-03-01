@@ -384,7 +384,7 @@
   }
   .link-grp {
     position: absolute;
-    top: 7em;
+    top: 7.3em;
     left: 0;
     background: #502eff;
     width: 100%;
@@ -402,6 +402,7 @@
   }
   .nav ul > li > a {
     color: white;
+    margin:  1em 0;
   }
   .nav ul > li > a:hover {
     color: red;
@@ -443,27 +444,42 @@
     padding: 2em;
     background-size: 700px 600px;
   }
+  .trouble {
+  width: 50%;
+}
 }
 
 @media screen and (min-width: 900px) and (max-width: 1300px) {
   .teams-people-cont {
     flex-direction: column;
   }
+  .trouble {
+  width: 55%;
+}
+  .team-card-img {
+    width: 500px;
+  }
+  .team-card-img > img {
+    width: 600px;
+  }
+  .nav ul > li > a {
+  margin: 0 .6em; 
+  }
 }
 @media screen and (max-width: 500px) {
+  .nav {
+    padding: 0 1em;
+    width:  100%;
+  }
   .trouble img {
     width: 100%;
-  }
-  .showcase > p {
-    margin: 0 auto;
   }
   .home-container {
     /* background: #000; */
     width: 100%;
+    overflow-x: hidden;
   }
-  .showcase > p {
-    margin: 0 auto;
-  }
+  
   .services {
     width: 100%;
     padding: 1em;
@@ -484,4 +500,36 @@
   .teams-people-cont {
     width: 100%;
   }
+  .footer-wrapper {
+    width: 100%;
+    margin: 1em;
+    flex-direction: column;
+  }
+  .work-icon { 
+    width: 300px;
+  }
+  .showcase > p {
+    /* margin: 0 0 0 0; */
+    font: normal normal 400 60px/40px 'Comic Neue', cursive;
+    margin-left: .9em;
+  }
+  .services span {
+  font: normal normal 400 50px/39px 'Maven Pro';
+  letter-spacing: -1.65px;
+  color: #ffffff;
+}
+.services-head {
+  margin: 1em 0 4em 0;
+}
+.team-card-img {
+  margin: 0 0 0 0;
+  width: 200px;
+}
+.team-intro > div {
+  width: 95%;
+  margin: 0 auto;
+}
+.trouble {
+  display: none;
+}
 }
