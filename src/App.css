@@ -363,7 +363,9 @@
   color: #502eff;
   font-size: 2em;
 }
-
+.team-links img:hover {
+  filter: invert(0.3) sepia(1) saturate(100%) hue-rotate(120deg);
+}
 @media screen and (max-width: 900px) {
   .nav {
     width: 100%;
@@ -442,6 +444,7 @@
     background-size: 700px 600px;
   }
 }
+
 @media screen and (min-width: 900px) and (max-width: 1300px) {
   .teams-people-cont {
     flex-direction: column;
