@@ -18,7 +18,7 @@ const Test = () => {
     const url = 'https://api.navihealth.ai/api/v2/user_info';
     const fetchData = async () => {
       try {
-        // const { data } = await axios.get(url, config);
+        const { data } = await axios.get(url, config);
         const resp = await fetch(url, {
           method: 'GET',
           headers: {
@@ -28,6 +28,7 @@ const Test = () => {
         });
         const res = await resp.json();
         console.log(res);
+        console.log(data);
       } catch (error) {
         console.log(error);
       }
